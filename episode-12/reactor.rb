@@ -70,7 +70,7 @@ class Reactor
 
   def cool_items_in_core
     @core.contents.each do |item|
-      item.temperature -= 1 if draw_power(2)
+      item.temperature -= 10 if draw_power(2)
     end
   end
 
